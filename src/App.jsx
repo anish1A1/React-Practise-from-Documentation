@@ -18,7 +18,7 @@ function App() {
       </div>
     </div>
      
-     <div className='container flex justify-center my-20 '>
+     <div className='container m-20 '>
             <UseStatePrac />
      </div>
     </>
