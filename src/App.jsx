@@ -3,6 +3,7 @@ import { BiArchive } from 'react-icons/bi'
 import Events from './practise/Events'
 import UseStatePrac from './practise/UseStatePrac/UseStatePrac'
 import Counter from './UpdateState/Counter'
+import RequestTracker from './Tracker/RequestTracker'
 
 function App() {
   
@@ -24,6 +25,9 @@ function App() {
      </div>
      <div>
       <Counter />
+     </div>
+     <div className='flex justify-center gap-3 border-light-400  font-semibold'>
+      <RequestTracker />
      </div>
     </>
   )
