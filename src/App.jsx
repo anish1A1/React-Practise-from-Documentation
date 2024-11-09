@@ -2,6 +2,7 @@
 import { BiArchive } from 'react-icons/bi'
 import Events from './practise/Events'
 import UseStatePrac from './practise/UseStatePrac/UseStatePrac'
+import Counter from './UpdateState/Counter'
 
 function App() {
   
@@ -20,6 +21,9 @@ function App() {
      
      <div className='container m-20 '>
             <UseStatePrac />
+     </div>
+     <div>
+      <Counter />
      </div>
     </>
   )
