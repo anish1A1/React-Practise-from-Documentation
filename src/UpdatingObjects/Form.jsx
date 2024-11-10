@@ -32,6 +32,15 @@ export default function Form() {
     }
 
 
+    // we can also use this way 
+    // use the [ and ] braces inside your object definition to specify a property with a dynamic name.
+    function handleChange(e) {
+        setPerson({
+            ...person,
+            [e.target.name]: [e.target.value]
+        })
+    }
+
     return (
         <>
             <label className="font-black">
