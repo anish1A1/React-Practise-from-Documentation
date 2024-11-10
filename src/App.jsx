@@ -4,6 +4,7 @@ import Events from './practise/Events'
 import UseStatePrac from './practise/UseStatePrac/UseStatePrac'
 import Counter from './UpdateState/Counter'
 import RequestTracker from './Tracker/RequestTracker'
+import Form from './UpdatingObjects/Form'
 
 function App() {
   
@@ -28,6 +29,9 @@ function App() {
      </div>
      <div className='flex justify-center gap-3 border-light-400  font-semibold'>
       <RequestTracker />
+     </div>
+     <div className='grid w-40'>
+      <Form/>
      </div>
     </>
   )
