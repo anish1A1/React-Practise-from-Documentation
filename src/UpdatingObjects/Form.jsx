@@ -34,6 +34,7 @@ export default function Form() {
 
     // we can also use this way 
     // use the [ and ] braces inside your object definition to specify a property with a dynamic name.
+    // eslint-disable-next-line no-unused-vars
     function handleChange(e) {
         setPerson({
             ...person,

@@ -5,6 +5,9 @@ import UseStatePrac from './practise/UseStatePrac/UseStatePrac'
 import Counter from './UpdateState/Counter'
 import RequestTracker from './Tracker/RequestTracker'
 import Form from './UpdatingObjects/Form'
+import NestedForm from './UpdatingObjects/NestedForm'
+
+import './index.css'
 
 function App() {
   
@@ -32,6 +35,10 @@ function App() {
      </div>
      <div className='grid w-40'>
       <Form/>
+     </div>
+     <br />
+     <div className='w-60'>
+     <NestedForm />
      </div>
     </>
   )
