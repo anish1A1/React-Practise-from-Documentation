@@ -8,6 +8,8 @@ import Form from './UpdatingObjects/Form'
 import NestedForm from './UpdatingObjects/NestedForm'
 
 import './index.css'
+// eslint-disable-next-line no-unused-vars
+import UsingImmer from './UpdatingObjects/UsingImmer'
 
 function App() {
   
@@ -39,6 +41,7 @@ function App() {
      <br />
      <div className='w-60'>
      <NestedForm />
+     {/* <UsingImmer /> */}
      </div>
     </>
   )
