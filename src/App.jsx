@@ -11,6 +11,7 @@ import './index.css'
 // eslint-disable-next-line no-unused-vars
 import UsingImmer from './UpdatingObjects/UsingImmer'
 import ArrList from './UpdatingArrays/ArrList'
+import RemoveList from './UpdatingArrays/RemoveList'
 
 function App() {
   
@@ -47,6 +48,7 @@ function App() {
 
      <div>
       <ArrList />
+      <RemoveList />  
      </div>
     </>
   )
