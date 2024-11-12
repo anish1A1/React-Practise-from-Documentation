@@ -1,4 +1,4 @@
-/* eslint-disable no-unused-vars */
+ 
 import { useState } from "react";
 
 export default function ArrList() {
@@ -16,10 +16,13 @@ export default function ArrList() {
             onChange={e => setName(e.target.value)} />
 
             <button onClick={()=>{
-                artist.push({
-                    id: nextId++,
-                    name: name,
-                })
+                setartist(       // we can use the spread operator here to update the state value
+                    [...artist, {
+                        id: nextId++,        //here artist will have a copy and 
+                                            //we can add the name in the artist array in this way with a id of
+                        name: name
+                    } ]
+                )
             }}>ADD</button>
 
             <ul>
