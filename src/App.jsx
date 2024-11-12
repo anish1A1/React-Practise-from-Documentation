@@ -10,6 +10,7 @@ import NestedForm from './UpdatingObjects/NestedForm'
 import './index.css'
 // eslint-disable-next-line no-unused-vars
 import UsingImmer from './UpdatingObjects/UsingImmer'
+import ArrList from './UpdatingArrays/ArrList'
 
 function App() {
   
@@ -42,6 +43,10 @@ function App() {
      <div className='w-60'>
      <NestedForm />
      {/* <UsingImmer /> */}
+     </div>
+
+     <div>
+      <ArrList />
      </div>
     </>
   )
