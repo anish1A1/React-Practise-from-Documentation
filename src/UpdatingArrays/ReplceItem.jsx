@@ -19,7 +19,7 @@ export default function ReplceItem() {
                 return c;
             }
         });
-        setCounter(nextCounter)
+        setCounter(nextCounter);                                                     
     }
 
     return (
