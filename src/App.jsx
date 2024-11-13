@@ -12,6 +12,7 @@ import './index.css'
 import UsingImmer from './UpdatingObjects/UsingImmer'
 import ArrList from './UpdatingArrays/ArrList'
 import RemoveList from './UpdatingArrays/RemoveList'
+import TransfArray from './UpdatingArrays/TransfArray'
 
 function App() {
   
@@ -49,6 +50,10 @@ function App() {
      <div>
       <ArrList />
       <RemoveList />  
+     </div>
+
+     <div className='w-60 p-10'>
+      <TransfArray />
      </div>
     </>
   )
