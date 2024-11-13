@@ -13,6 +13,7 @@ import UsingImmer from './UpdatingObjects/UsingImmer'
 import ArrList from './UpdatingArrays/ArrList'
 import RemoveList from './UpdatingArrays/RemoveList'
 import TransfArray from './UpdatingArrays/TransfArray'
+import ReplceItem from './UpdatingArrays/ReplceItem'
 
 function App() {
   
@@ -54,6 +55,7 @@ function App() {
 
      <div className='w-60 p-10'>
       <TransfArray />
+      <ReplceItem />
      </div>
     </>
   )
