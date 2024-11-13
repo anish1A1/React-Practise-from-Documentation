@@ -23,7 +23,8 @@ export default function RemoveList() {
                    {item.name} {' '}
                     <button onClick={() => {
                        setartist(
-                        artist.filter( a => a.id !== item.id)
+                        artist.filter( a => a.id !== item.id)  // this line means that create an array that consists of those artists whose
+                        // IDs are different from the item IDs           // a.id is the artist id's // it is filtering here and making unequal to the item's id.
                        );
                     }}> Delete </button>
                   </li>  
