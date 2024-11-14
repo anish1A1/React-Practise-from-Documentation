@@ -15,23 +15,43 @@ export default function UpdatingObjectArray() {
     let [mylist, setMylist] = useState(initialList);
 
     function handleListToggle(artworkId, nextSeen) {
-        const myNextList = [...mylist];
-        const artworks = myNextList.find(
-            a => a.id === artworkId
-        );
-        artworks.seen = nextSeen;
-        setMylist(myNextList);
+       
+        setMylist(
+            mylist.map( artwork => {
+                if (artwork.id === artworkId) {
+                    return{
+                        ...artwork,
+                        seen: nextSeen
+                    }
+
+                    
+                }
+
+                else{
+                    return artwork;
+                }
+            })
+        )
     }
 
     
     function handleYourListToggle(artworkId, nextSeen) {
 
-        const yourNextList = [...yourList];
-        const yourArtsworks = yourList.find(
-            a => a.id === artworkId
-        );
-        yourArtsworks.seen = nextSeen;
-        setYourList(yourNextList);
+       setYourList(yourList.map(artwork => {
+        if (artwork.id === artworkId){
+
+            //create a *new* object with changes 
+            return {
+                ...artwork,
+                seen : nextSeen
+            }
+        }
+        else{
+            //No change
+            return artwork;
+        }
+       }))
+       
     }
         
     return(
