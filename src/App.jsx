@@ -15,6 +15,7 @@ import RemoveList from './UpdatingArrays/RemoveList'
 import TransfArray from './UpdatingArrays/TransfArray'
 import ReplceItem from './UpdatingArrays/ReplceItem'
 import InsertArray from './UpdatingArrays/InsertArray'
+import UpdatingObjectArray from './UpdatingArrays/UpdatingObjectArray'
 
 function App() {
   
@@ -58,6 +59,11 @@ function App() {
       <TransfArray />
       <ReplceItem />
       <InsertArray />
+      
+     </div>
+
+     <div className='m-3 p-3 '>
+     <UpdatingObjectArray />
      </div>
     </>
   )
